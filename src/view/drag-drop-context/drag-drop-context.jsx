@@ -87,7 +87,9 @@ export default class DragDropContext extends React.Component<Props> {
   unsubscribe: Function;
 
   constructor(props: Props, context: mixed) {
-    super(props, context);
+      super(props, context);
+
+	  console.log("->>>>>>>>>>>>>>>>this is add by hurixin ", props);
 
     // A little setup check for dev
     if (process.env.NODE_ENV !== 'production') {
